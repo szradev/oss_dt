@@ -533,3 +533,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Use 64-bit dex2oat for better dexopt time.
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
+
+# Gcam
+PRODUCT_PACKAGES += \
+		GCamGo
+
+# wallet card & passes
+PRODUCT_PACKAGES += \
+		QuickAccessWallet
