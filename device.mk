@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-syberia \
+    $(LOCAL_PATH)/overlay-revengeos \
     $(LOCAL_PATH)/overlay-system
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -529,7 +529,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Smart Charge
 PRODUCT_PACKAGES += \
-    vendor.syberia.smartcharge@1.0-service
+    vendor.revengeos.smartcharge@1.0-service
 
 # Updater
 PRODUCT_PACKAGES += \
