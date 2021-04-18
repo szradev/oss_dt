@@ -17,12 +17,11 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Syberia stuff.
 #$(call inherit-product, vendor/revengeos/common.mk)
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
-REVENGEOS_BUILD_TYPE := OFFICIAL
-
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
+BLISS_BUILDTYPE := NIGHTLY
+EXTRA_FOD_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -35,7 +34,7 @@ TARGET_WANTS_FOD_ANIMATIONS := true
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_raphael
+PRODUCT_NAME := bliss_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
