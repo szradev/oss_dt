@@ -10,9 +10,10 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # FOD
 TARGET_HAS_FOD := true
 TARGET_WANTS_FOD_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Inherit some common Bliss stuff.
-BLISS_BUILDTYPE := NIGHTLY
+BLISS_BUILDTYPE := OSS
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
