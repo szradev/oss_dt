@@ -530,10 +530,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
 
-# Gcam
-PRODUCT_PACKAGES += \
-		GCamGo
-
 # wallet card & passes
 PRODUCT_PACKAGES += \
 		QuickAccessWallet
