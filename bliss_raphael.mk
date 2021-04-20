@@ -1,0 +1,29 @@
+#
+# Copyright (C) 2020-2021 The LineageOS Project
+# Copyright (C) 2020-2021 The Evolution X Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+$(call inherit-product, device/xiaomi/raphael/device.mk)
+
+# FOD
+TARGET_HAS_FOD := true
+TARGET_WANTS_FOD_ANIMATIONS := true
+
+# Inherit some common Bliss stuff.
+BLISS_BUILDTYPE := NIGHTLY
+TARGET_USES_BLUR := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+USE_GAPPS := true
+#TARGET_OPLAUNCHER := true
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+
+# Device identifier. This must come after all inclusions.
+PRODUCT_BRAND := Xiaomi
+PRODUCT_DEVICE := raphael
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := bliss_raphael
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
