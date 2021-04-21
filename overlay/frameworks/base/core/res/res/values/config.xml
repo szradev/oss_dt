@@ -538,7 +538,7 @@
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
-    
+
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
@@ -567,4 +567,8 @@
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
 
+
+        <!-- Shows the required view for in-display fingerprint -->
+        <bool name="config_needCustomFODView">true</bool>
+        <bool name="config_supportsInDisplayFingerprint">true</bool>
 </resources>
