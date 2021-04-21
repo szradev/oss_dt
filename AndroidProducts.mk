@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_raphael.mk
+    $(LOCAL_DIR)/revengeos_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_raphael-user \
-    bliss_raphael-userdebug \
-    bliss_raphael-eng
+    revengeos_raphael-user \
+    revengeos_raphael-userdebug \
+    revengeos_raphael-eng

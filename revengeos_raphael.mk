@@ -12,19 +12,19 @@ TARGET_HAS_FOD := true
 TARGET_WANTS_FOD_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1440
 
-# Inherit some common Bliss stuff.
-BLISS_BUILDTYPE := OSS
+# Inherit some common Revengeos stuff.
+REVENGEOS_BUILDTYPE := OFFICIAL
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 USE_GAPPS := true
 #TARGET_OPLAUNCHER := true
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := bliss_raphael
+PRODUCT_NAME := revengeos_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
