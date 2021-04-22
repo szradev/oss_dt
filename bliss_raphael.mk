@@ -18,7 +18,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Bliss stuff.
 BLISS_BUILDTYPE := OSS
-BLISS_BUILD_VARIANT=vanilla
+BLISS_BUILD_VARIANT := vanilla
+
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # FOD
 TARGET_HAS_FOD := true
