@@ -16,9 +16,9 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Bliss stuff.
-BLISS_BUILDTYPE := OSS
-BLISS_BUILD_VARIANT := vanilla
+# Inherit some common aosp stuff.
+AOSP_BUILDTYPE := OSS
+#BLISS_BUILD_VARIANT := vanilla
 
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
@@ -30,11 +30,11 @@ TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_raphael
+PRODUCT_NAME := aosp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
@@ -43,6 +43,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="raphael"
 
-PRODUCT_NAME := bliss_raphael
+PRODUCT_NAME := aosp_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
