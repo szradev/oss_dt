@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_raphael.mk
+    $(LOCAL_DIR)/revengeos_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_raphael-user \
-    arrow_raphael-userdebug \
-    arrow_raphael-eng
+    revengeos_raphael-user \
+    revengeos_raphael-userdebug \
+    revengeos_raphael-eng
