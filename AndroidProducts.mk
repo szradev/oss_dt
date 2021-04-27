@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_raphael.mk
+    $(LOCAL_DIR)/revengeos_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_raphael-user \
-    aosp_raphael-userdebug \
-    aosp_raphael-eng
+    revengeos_raphael-user \
+    revengeos_raphael-userdebug \
+    revengeos_raphael-eng
